@@ -1,15 +1,18 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Tv, Wrench, Shield, Clock, Star, ChevronRight, MessageCircle } from "lucide-react";
-import heroImage from "@/assets/hero-electronics.jpg";
+// import heroImage from "@/assets/hero-electronics.jpg";
 import smartTvImage from "@/assets/product-smart-tv.jpg";
 import homeTheatreImage from "@/assets/product-home-theatre.jpg";
 import fanImage from "@/assets/product-fan.jpg";
+import heroVideo from "@/assets/hero-video.mp4";
+import serviceVideo from "@/assets/service-video.mp4";
+
 
 const Index = () => {
-  const whatsappNumber = "2348012345678";
+  const whatsappNumber = "2348032090599";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%2C%20I%20visited%20your%20website%20and%20I%27m%20interested%20in%20your%20services.`;
-  const serviceFormLink = "https://forms.gle/your-google-form-id";
+  const serviceFormLink = "https://docs.google.com/forms/d/e/1FAIpQLSfySL_uEeHr_1-l29wFKZ8Lj55km73U-JDNsRKZekGjgbPBgw/viewform";
 
   const benefits = [
     {
@@ -59,14 +62,27 @@ const Index = () => {
     <main>
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0">
+        {/* <div className="absolute inset-0">
           <img
             src={heroImage}
             alt="SmartView Electronics Store"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/80 to-transparent" />
-        </div>
+        </div> */}
+
+        <div className="absolute inset-0">
+          <video
+            src={heroVideo}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+          />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/80 to-transparent" />
+      </div>
+
         
         <div className="container relative z-10 py-20">
           <div className="max-w-2xl">
@@ -249,7 +265,7 @@ const Index = () => {
                 </a>
               </div>
             </div>
-            <div className="relative">
+            {/* <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl p-8 flex items-center justify-center">
                 <div className="text-center">
                   <Wrench className="w-24 h-24 text-primary mb-6 mx-auto" />
@@ -257,7 +273,35 @@ const Index = () => {
                   <p className="text-gray-400">Same-day repairs available for most issues</p>
                 </div>
               </div>
+            </div> */}
+
+            <div className="relative">
+              <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl p-8 flex items-end justify-center overflow-hidden">
+                {/* Video Background */}
+                <video
+                  src={serviceVideo}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="absolute inset-0 w-full h-full object-cover rounded-3xl"
+                />
+
+                {/* Text with blur background */}
+                <div className="relative z-10 w-full text-center">
+                  <div className="bg-black/50 backdrop-blur-md rounded-lg px-4 py-3 inline-block">
+                    <h3 className="font-display text-2xl font-bold mb-2 text-white">
+                      Quick Turnaround
+                    </h3>
+                    <p className="text-gray-200">
+                      Same-day repairs available for most issues
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
+
+
           </div>
         </div>
       </section>

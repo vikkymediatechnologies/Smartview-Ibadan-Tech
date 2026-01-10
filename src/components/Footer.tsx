@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Tv, Phone, Mail, MapPin, Clock } from "lucide-react";
 
 const Footer = () => {
-  const whatsappNumber = "2348012345678";
+  const whatsappNumber = "2348032090599";
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
 
   return (
@@ -12,8 +12,11 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 hero-gradient rounded-lg flex items-center justify-center">
-                <Tv className="w-6 h-6 text-white" />
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center">
+               <img
+              src="/src/assets/logo.png"
+              alt="SmartView Electronics Logo"
+              className="w-full h-full object-contain"/>
               </div>
               <span className="font-display font-bold text-xl">SmartView Electronics</span>
             </Link>
@@ -71,7 +74,7 @@ const Footer = () => {
                   className="flex items-center gap-3 text-sm text-gray-400 hover:text-white transition-colors"
                 >
                   <Phone className="w-4 h-4 text-primary" />
-                  <span>+234 801 234 5678</span>
+                  <span>+234 803 209 0599</span>
                 </a>
               </li>
               <li>
