@@ -18,7 +18,7 @@ const Header = () => {
 
   const isActive = (path: string) => location.pathname === path;
 
-  const whatsappNumber = "2348012345678"; // Replace with actual number
+  const whatsappNumber = "2348032090599";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hello%2C%20I%20visited%20your%20website%20and%20I%27m%20interested%20in%20your%20services.`;
 
   return (
@@ -27,8 +27,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 hero-gradient rounded-lg flex items-center justify-center">
-              <Tv className="w-6 h-6 text-white" />
+            <div className="w-10 h-10 rounded-lg flex items-center justify-center">
+              <img
+              src="/src/assets/logo.png"
+              alt="SmartView Electronics Logo"
+              className="w-full h-full object-contain"/>
             </div>
             <div>
               <span className="font-display font-bold text-lg md:text-xl text-foreground">
