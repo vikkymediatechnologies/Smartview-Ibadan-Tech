@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Tv, Phone, Mail, MapPin, Clock } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const whatsappNumber = "2348032090599";
@@ -14,7 +15,7 @@ const Footer = () => {
             <Link to="/" className="flex items-center gap-2">
               <div className="w-10 h-10 rounded-lg flex items-center justify-center">
                <img
-              src="/src/assets/logo.png"
+              src={logo}
               alt="SmartView Electronics Logo"
               className="w-full h-full object-contain"/>
               </div>

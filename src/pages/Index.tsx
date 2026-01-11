@@ -275,31 +275,31 @@ const Index = () => {
               </div>
             </div> */}
 
-            <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl p-8 flex items-end justify-center overflow-hidden">
-                {/* Video Background */}
-                <video
-                  src={serviceVideo}
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="absolute inset-0 w-full h-full object-cover rounded-3xl"
-                />
+          <div className="relative">
+            <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-3xl p-8 flex items-end justify-center overflow-hidden">
+              {/* Video Background */}
+              <video
+                src={serviceVideo}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="absolute inset-0 w-full h-full object-cover rounded-3xl"
+              />
 
-                {/* Text with blur background */}
-                <div className="relative z-10 w-full text-center">
-                  <div className="bg-black/50 backdrop-blur-md rounded-lg px-4 py-3 inline-block">
-                    <h3 className="font-display text-2xl font-bold mb-2 text-white">
-                      Quick Turnaround
-                    </h3>
-                    <p className="text-gray-200">
-                      Same-day repairs available for most issues
-                    </p>
-                  </div>
+              {/* Text with blur background */}
+              <div className="relative z-10 w-full text-center">
+                <div className="bg-black/50 backdrop-blur-md rounded-lg px-4 py-3 inline-block">
+                  <h3 className="font-display text-2xl font-bold mb-2 text-white">
+                    Quick Turnaround
+                  </h3>
+                  <p className="text-gray-200">
+                    Same-day repairs available for most issues
+                  </p>
                 </div>
               </div>
             </div>
+          </div>
 
 
           </div>

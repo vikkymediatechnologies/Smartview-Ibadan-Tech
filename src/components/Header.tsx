@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, Tv } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,7 +30,7 @@ const Header = () => {
           <Link to="/" className="flex items-center gap-2">
             <div className="w-10 h-10 rounded-lg flex items-center justify-center">
               <img
-              src="/src/assets/logo.png"
+              src={logo}
               alt="SmartView Electronics Logo"
               className="w-full h-full object-contain"/>
             </div>
