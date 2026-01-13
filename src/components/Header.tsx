@@ -328,13 +328,13 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
             {navLinks.map((link, idx) => (
               <Link
                 key={link.href}
                 to={link.href}
                 onMouseMove={handlePointerMove}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors sv-stagger sv-pointer ${
+                className={`px-3 xl:px-4 py-2 rounded-lg text-sm font-medium transition-colors sv-stagger sv-pointer ${
                   isActive(link.href)
                     ? "bg-primary/10 text-primary"
                     : "text-muted-foreground hover:text-foreground hover:bg-muted"
